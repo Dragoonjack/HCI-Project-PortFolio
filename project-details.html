@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>Case Study: Fuzzy Logic Rating System | My Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<div id="header">
+
+			<!-- Logo -->
+			<h1><a href="index.html" id="logo">My <em>Portfolio</em></a></h1>
+
+			<!-- Nav (Standardized for HCI Consistency) -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Me</a></li>
+					<li><a href="academics.html">Academics</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li class="current"><a href="project-details.html">Case Study</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+		</div>
+
+		<!-- Main -->
+		<section class="wrapper style1">
+			<div class="container">
+				<div class="row gtr-200">
+
+					<!-- Left Sidebar (Quick Context & Tech Stack) -->
+					<div class="col-3 col-12-narrower">
+						<div id="sidebar1">
+
+							<section>
+								<h3>Project Context</h3>
+								<p>An academic capstone project designed to resolve the ambiguity in qualitative human feedback using mathematical modeling and artificial intelligence.</p>
+							</section>
+
+							<section>
+								<h3>Technical Stack</h3>
+								<ul class="links">
+									<li><strong>Language:</strong> Python</li>
+									<li><strong>NLP:</strong> NLTK (Natural Language Toolkit)</li>
+									<li><strong>Logic Engine:</strong> Scikit-Fuzzy</li>
+									<li><strong>Data Handling:</strong> Pandas & NumPy</li>
+									<li><strong>Environment:</strong> Jupyter / VS Code</li>
+								</ul>
+							</section>
+
+						</div>
+					</div>
+
+					<!-- Main Content (The Deep Dive) -->
+					<div class="col-6 col-12-narrower imp-narrower">
+						<div id="content">
+
+							<article>
+								<header>
+									<h2>Campus Cafeteria Rating System</h2>
+									<p>Bridging the gap between unstructured human sentiment and structured quantitative data.</p>
+								</header>
+
+								<span class="image featured"><img src="images/pic03.jpg" alt="System architecture diagram or code snippet" /></span>
+
+								<h3>The Problem</h3>
+								<p>Traditional 5-star rating systems are inherently flawed. A student might leave a review stating, <em>"The food was quite good, but the service was incredibly slow and the portions were slightly small."</em> Forcing this nuanced, unstructured data into a rigid numerical score often leads to skewed campus analytics and unhelpful metrics for cafeteria management.</p>
+
+								<h3>System Architecture & NLP</h3>
+								<p>To solve this, I engineered a two-part intelligent system. First, the application utilizes Natural Language Processing (NLP) to parse written student reviews. The NLP module tokenizes the text and performs sentiment analysis to extract "crisp" numerical values based on three distinct parameters: <strong>Food Quality</strong>, <strong>Service Speed</strong>, and <strong>Value for Money</strong>.</p>
+
+								<h3>The Fuzzy Logic Inference Engine</h3>
+								<p>Because human language includes modifiers (like "slightly" or "incredibly"), standard Boolean logic (True/False) is insufficient. I passed the NLP outputs into a Fuzzy Inference System. By defining specific membership functions (Poor, Average, Excellent) and establishing a robust matrix of IF-THEN rules, the system intelligently defuzzifies the data, producing a highly accurate, bias-reduced final rating out of 100%.</p>
+							</article>
+
+						</div>
+					</div>
+
+					<!-- Right Sidebar (Features & Call to Action) -->
+					<div class="col-3 col-12-narrower">
+						<div id="sidebar2">
+
+							<section>
+								<h3>System Features</h3>
+								<ul class="links">
+									<li><a href="#">Automated Sentiment Extraction</a></li>
+									<li><a href="#">Custom Fuzzy Rule Matrix</a></li>
+									<li><a href="#">Bias Reduction Algorithms</a></li>
+									<li><a href="#">Scalable Data Processing</a></li>
+								</ul>
+							</section>
+
+							<section>
+								<h3>View The Source</h3>
+								<p>The complete mathematical models, membership function graphs, and Python codebase are available for review.</p>
+								<footer>
+									<a href="#" class="button">View on GitHub</a>
+								</footer>
+							</section>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer (Standardized) -->
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<section class="col-3 col-6-narrower col-12-mobilep">
+						<h3>Core Competencies</h3>
+						<ul class="links">
+							<li>Machine Learning & Regression</li>
+							<li>Natural Language Processing</li>
+							<li>Fuzzy Logic Systems</li>
+							<li>Front-End Web Development (HTML/CSS)</li>
+							<li>Software Troubleshooting</li>
+						</ul>
+					</section>
+					<section class="col-3 col-6-narrower col-12-mobilep">
+						<h3>Quick Links</h3>
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Me</a></li>
+							<li><a href="portfolio.html">View Portfolio</a></li>
+							<li><a href="#">Download Resume (PDF)</a></li>
+						</ul>
+					</section>
+					<section class="col-6 col-12-narrower">
+						<h3>Get In Touch</h3>
+						<form>
+							<div class="row gtr-50">
+								<div class="col-6 col-12-mobilep">
+									<input type="text" name="name" id="name" placeholder="Name" />
+								</div>
+								<div class="col-6 col-12-mobilep">
+									<input type="email" name="email" id="email" placeholder="Email" />
+								</div>
+								<div class="col-12">
+									<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+								</div>
+								<div class="col-12">
+									<ul class="actions">
+										<li><input type="submit" class="button alt" value="Send Message" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</section>
+				</div>
+			</div>
+
+			<!-- Icons -->
+			<ul class="icons">
+				<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+			</ul>
+
+			<!-- Copyright -->
+			<div class="copyright">
+				<ul class="menu">
+					<li>&copy; My Portfolio. All rights reserved</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>
