@@ -3415,3 +3415,31 @@ input[type="submit"], input[type="reset"], input[type="button"], .button {
 .icon {
 	color: #00E5FF !important; /* Turns all layout icons Godzilla Blue */
 }
+
+/* Sleek Initials Logo Badge */
+.logo-badge {
+	display: inline-block;
+	background: #1F242C;
+	color: #00E5FF !important; /* Glowing Godzilla Blue */
+	border: 2px solid #00E5FF;
+	border-radius: 50%;
+	width: 42px;
+	height: 42px;
+	line-height: 38px;
+	text-align: center;
+	font-weight: 800;
+	font-size: 0.7em;
+	margin-right: 12px;
+	letter-spacing: -0.5px;
+	box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+	vertical-align: middle;
+	transition: all 0.3s ease;
+}
+
+/* Subtle pulse hover effect for your badge */
+#logo:hover .logo-badge {
+	background: #00E5FF;
+	color: #13171D !important;
+	box-shadow: 0 0 25px #00E5FF;
+	transform: scale(1.05);
+}
