@@ -3360,14 +3360,26 @@ input, select, textarea {
 	}
 
 /* ==========================================================================
-   NEON KAIJU AMBIENT LIGHTING OVERRIDES (BRIGHTER)
+   NEON KAIJU AMBIENT LIGHTING OVERRIDES (FIXED)
    ========================================================================== */
 
-/* 1. Ambient Lighting Background */
-body, #page-wrapper, #main, .wrapper {
-	background: linear-gradient(to right, #242629 10%, #687385 100%) !important;
+/* 1. Unified Ambient Background */
+body, #page-wrapper {
+	background-color: #11151C !important;
+	/* Starts dark at the top, stays dark until 50%, fades to grey at the bottom */
+	background-image: linear-gradient(to bottom, #11151C 0%, #11151C 50%, #3A4759 100%) !important;
 	background-attachment: fixed !important;
 	color: #ffffff !important;
+}
+
+/* Make sure the content boxes are transparent so the background shows through */
+#main, .wrapper, .wrapper.style1, .wrapper.style2, .wrapper.style3 {
+	background: transparent !important;
+}
+
+/* Keep text readable against the new background */
+#content p, #sidebar p, .box.highlight p {
+	color: #A0B2C6 !important;
 }
 
 /* 2. Glass Effect Headers */
@@ -3381,46 +3393,46 @@ h1, h2, h3, h4, h5, h6, strong {
 	color: #ffffff !important;
 }
 
-/* 3. Navigation Bar (HCI Visibility of System Status) */
+/* 4. Navigation Bar (HCI Visibility of System Status) */
 #nav > ul > li > a {
-	color: #AAB2BB !important; /* Muted gray for inactive links */
+	color: #AAB2BB !important;
 }
 
 #nav > ul > li:hover > a {
-	color: #00E5FF !important; /* Godzilla Blue hover effect */
+	color: #00E5FF !important;
 }
 
 #nav > ul > li.current > a, #nav > ul > li.active > a {
-	color: #00E5FF !important; /* Active page indicator */
-	border-bottom: 2px solid #00E5FF; /* Subtle glow underline */
+	color: #00E5FF !important;
+	border-bottom: 2px solid #00E5FF;
 }
 
-/* 4. Godzilla Blue Buttons & Interactive Elements */
+/* 5. Godzilla Blue Buttons & Interactive Elements */
 input[type="submit"], input[type="reset"], input[type="button"], .button {
-	background-color: #00E5FF !important; /* Godzilla Blue fill */
-	color: #161B22 !important; /* Dark text inside button for contrast */
+	background-color: #00E5FF !important;
+	color: #161B22 !important;
 	font-weight: bold !important;
 	border: none !important;
-	box-shadow: 0 0 10px rgba(0, 229, 255, 0.4) !important; /* Subtle neon glow effect */
+	box-shadow: 0 0 10px rgba(0, 229, 255, 0.4) !important;
 	transition: all 0.3s ease !important;
 }
 
 	input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:hover {
-		background-color: #D32F2F !important; /* Switches to Blood Red on hover! */
-		color: #ffffff !important; /* White text on hover */
+		background-color: #D32F2F !important;
+		color: #ffffff !important;
 		box-shadow: 0 0 15px rgba(211, 47, 47, 0.6) !important;
 	}
 
-/* 5. Icons & Small Highlights */
+/* 6. Icons & Small Highlights */
 .icon {
-	color: #00E5FF !important; /* Turns all layout icons Godzilla Blue */
+	color: #00E5FF !important;
 }
 
-/* Sleek Initials Logo Badge */
+/* 7. Sleek Initials Logo Badge */
 .logo-badge {
 	display: inline-block;
 	background: #1F242C;
-	color: #00E5FF !important; /* Glowing Godzilla Blue */
+	color: #00E5FF !important;
 	border: 2px solid #00E5FF;
 	border-radius: 50%;
 	width: 42px;
