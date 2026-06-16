@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Arcana by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 <head>
 	<title>Portfolio | My Portfolio</title>
@@ -14,13 +9,15 @@
 <body class="is-preload">
 	<div id="page-wrapper">
 
-		<!-- Header -->
 		<div id="header">
 
-			<!-- Logo -->
-			<h1><a href="index.html" id="logo">My <em>Portfolio</em></a></h1>
+			<h1>
+				<a href="index.html" id="logo">
+					<span class="logo-badge">SBM</span>
+					My <em>Portfolio</em>
+				</a>
+			</h1>
 
-			<!-- Nav (Standardized for HCI Consistency) -->
 			<nav id="nav">
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -34,41 +31,51 @@
 
 		</div>
 
-		<!-- Main -->
 		<section class="wrapper style1">
 			<div class="container">
 				<div class="row gtr-200">
 
-					<!-- Main Content (Left Column - Secondary Projects) -->
 					<div class="col-8 col-12-narrower">
 						<div id="content">
 
 							<article>
-								<header>
+								<header style="margin-bottom: 3em;">
 									<h2>Selected Works</h2>
 									<p>A collection of machine learning models, predictive algorithms, and system optimization projects.</p>
 								</header>
 
-								<span class="image featured"><img src="images/pic02.jpg" alt="Data visualization or machine learning graph" /></span>
+								<section style="margin-bottom: 4em; clear: both;">
+									<span class="image left" style="width: 40%; margin-right: 2em;">
+										<img src="images/elasticnet_graph.webp" alt="ElasticNet Regression Graph" style="width: 100%; border-radius: 8px; filter: brightness(0.8) contrast(1.1); box-shadow: 0 4px 15px rgba(0,0,0,0.5);" />
+									</span>
+									<h3>Graduate Unemployment Predictor (Machine Learning)</h3>
+									<p style="color: #00E5FF; font-weight: bold; font-size: 0.9em;">Python | ElasticNet Regression | Scikit-learn | Pandas</p>
+									<p>This project focused on analyzing datasets to forecast employment trends for graduates in Malaysia. By cleaning raw data and mapping critical features, I implemented an ElasticNet regression model to predict unemployment rates. The project required balancing L1 and L2 regularization to handle correlated dataset features effectively, demonstrating a strong grasp of predictive data science methodologies.</p>
+								</section>
 
-								<h3>Graduate Unemployment Predictor (Machine Learning)</h3>
-								<p><strong>Technologies:</strong> Python, ElasticNet Regression, Scikit-learn, Pandas</p>
-								<p>This project focused on analyzing datasets to forecast employment trends for graduates in Malaysia. By cleaning raw data and mapping critical features, I implemented an ElasticNet regression model to predict unemployment rates. The project required balancing L1 and L2 regularization to handle correlated dataset features effectively, demonstrating a strong grasp of predictive data science methodologies.</p>
+								<section style="margin-bottom: 4em; clear: both;">
+									<span class="image left" style="width: 40%; margin-right: 2em;">
+										<img src="images/matlab_output.webp" alt="MATLAB Image Processing Output" style="width: 100%; border-radius: 8px; filter: brightness(0.8) contrast(1.1); box-shadow: 0 4px 15px rgba(0,0,0,0.5);" />
+									</span>
+									<h3>Digital Image Processing</h3>
+									<p style="color: #00E5FF; font-weight: bold; font-size: 0.9em;">MATLAB | Applied Mathematics</p>
+									<p>This coursework involved applying complex mathematical matrices and filtering techniques to manipulate digital images. Tasks included noise reduction, edge detection, and contrast enhancement, showcasing an ability to bridge mathematical theory with practical software outputs.</p>
+								</section>
 
-								<h3>Digital Image Processing</h3>
-								<p><strong>Technologies:</strong> MATLAB, Applied Mathematics</p>
-								<p>This coursework involved applying complex mathematical matrices and filtering techniques to manipulate digital images. Tasks included noise reduction, edge detection, and contrast enhancement, showcasing an ability to bridge mathematical theory with practical software outputs.</p>
-
-								<h3>Software Optimization & Troubleshooting</h3>
-								<p><strong>Focus:</strong> System Stability, Script Modification</p>
-								<p>Beyond academic requirements, I actively engage in deep-dive troubleshooting for PC game files and local software environments. This involves deploying software extenders, resolving script conflicts, and optimizing memory allocation to ensure smooth, high-performance user experiences.</p>
+								<section style="margin-bottom: 4em; clear: both;">
+									<span class="image left" style="width: 40%; margin-right: 2em;">
+										<img src="images/mod_troubleshoot.webp" alt="Software Modding and Load Order Configuration" style="width: 100%; border-radius: 8px; filter: brightness(0.8) contrast(1.1); box-shadow: 0 4px 15px rgba(0,0,0,0.5);" />
+									</span>
+									<h3>Software Optimization & Troubleshooting</h3>
+									<p style="color: #00E5FF; font-weight: bold; font-size: 0.9em;">System Stability | Script Modification | Load Order Optimization</p>
+									<p>Beyond academic requirements, I actively engage in deep-dive troubleshooting for PC game files and local software environments. This involves deploying software extenders, resolving script conflicts, and optimizing memory allocation to ensure smooth, high-performance user experiences.</p>
+								</section>
 
 							</article>
 
 						</div>
 					</div>
 
-					<!-- Sidebar (Right Column - Tech Stack & Primary Link) -->
 					<div class="col-4 col-12-narrower">
 						<div id="sidebar">
 
@@ -97,7 +104,6 @@
 			</div>
 		</section>
 
-		<!-- Footer (Standardized) -->
 		<div id="footer">
 			<div class="container">
 				<div class="row">
@@ -135,13 +141,10 @@
 				</div>
 			</div>
 
-			<!-- Icons -->
 			<ul class="icons">
-				<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-				<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/Dragoonjack" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 			</ul>
 
-			<!-- Copyright -->
 			<div class="copyright">
 				<ul class="menu">
 					<li>&copy; My Portfolio. All rights reserved</li>
@@ -153,7 +156,6 @@
 
 	</div>
 
-	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
