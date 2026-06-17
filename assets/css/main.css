@@ -3455,3 +3455,19 @@ input[type="submit"], input[type="reset"], input[type="button"], .button {
 	box-shadow: 0 0 25px #00E5FF;
 	transform: scale(1.05);
 }
+
+/* --- Form Input Text Color Fix --- */
+input[type="text"],
+input[type="email"],
+textarea {
+	color: #1a1a1a !important;
+}
+
+/* --- Uniform Portfolio Grid Images --- */
+.box.post .image.left img {
+	width: 100%;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	object-position: top center;
+	border-radius: 4px; /* Optional: Adds a slight, modern curve to the image corners */
+}

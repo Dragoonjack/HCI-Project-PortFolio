@@ -1,12 +1,7 @@
 <!DOCTYPE HTML>
-<!--
-	Arcana by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 <head>
-	<title>Case Study: Fuzzy Logic Rating System | My Portfolio</title>
+	<title>Case Study: AI Expert System | My Portfolio</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -14,13 +9,14 @@
 <body class="is-preload">
 	<div id="page-wrapper">
 
-		<!-- Header -->
 		<div id="header">
+			<h1>
+				<a href="index.html" id="logo">
+					<span class="logo-badge">SBM</span>
+					My <em>Portfolio</em>
+				</a>
+			</h1>
 
-			<!-- Logo -->
-			<h1><a href="index.html" id="logo">My <em>Portfolio</em></a></h1>
-
-			<!-- Nav (Standardized for HCI Consistency) -->
 			<nav id="nav">
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -31,96 +27,74 @@
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
-
 		</div>
 
-		<!-- Main -->
 		<section class="wrapper style1">
 			<div class="container">
-				<div class="row gtr-200">
+				<div id="content">
 
-					<!-- Left Sidebar (Quick Context & Tech Stack) -->
-					<div class="col-3 col-12-narrower">
-						<div id="sidebar1">
+					<article>
+						<header style="text-align: center; margin-bottom: 3em;">
+							<h2 style="font-size: 2.5em;">Expert System For Hornbill Classification</h2>
+							<p style="color: #00E5FF; font-weight: bold;">An AI-Driven Approach to Species Identification and Preservation Tracking</p>
 
-							<section>
-								<h3>Project Context</h3>
-								<p>An academic capstone project designed to resolve the ambiguity in qualitative human feedback using mathematical modeling and artificial intelligence.</p>
+							<div style="margin-top: 1.5em;">
+								<a href="https://rsisinternational.org/journals/ijriss/view/integrating-artificial-intelligence-into-environmental-education-a-rule-based-expert-system-for-hornbill-conservation-awareness" target="_blank" class="button alt" style="font-size: 0.9em; box-shadow: 0 0 10px rgba(0, 229, 255, 0.4);">
+									<i class="icon solid fa-book"></i> Read Published IJRISS Article
+								</a>
+							</div>
+						</header>
+
+						<span class="image featured">
+							<img src="images/hornbill-hero.png" alt="Hornbill Expert System Interface" style="border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);" />
+						</span>
+
+						<h3>1. The Problem Statement</h3>
+						<p>Wildlife conservation efforts frequently suffer from a "knowledge bottleneck." Identifying specific species of Hornbills—and instantly understanding their exact ecological preservation status—typically requires highly specialized zoological training. The goal of this project was to build an Artificial Intelligence Expert System capable of mimicking human zoological expertise, allowing non-experts to accurately classify birds in the field.</p>
+
+						<h3>2. System Architecture & Knowledge Base</h3>
+						<p>To solve this, my team and I engineered a rule-based Expert System using a structured inference engine:</p>
+						<div class="row gtr-200">
+							<section class="col-6 col-12-narrower">
+								<div class="box highlight" style="text-align: left; padding: 2em;">
+									<h4 style="color: #00E5FF;"><i class="icon solid fa-database"></i> The Knowledge Base</h4>
+									<p>We compiled a comprehensive matrix of Hornbill physical traits, geographical locations, and current preservation statuses, structuring this data into distinct, logical IF-THEN rules capable of being processed by the system.</p>
+								</div>
 							</section>
-
-							<section>
-								<h3>Technical Stack</h3>
-								<ul class="links">
-									<li><strong>Language:</strong> Python</li>
-									<li><strong>NLP:</strong> NLTK (Natural Language Toolkit)</li>
-									<li><strong>Logic Engine:</strong> Scikit-Fuzzy</li>
-									<li><strong>Data Handling:</strong> Pandas & NumPy</li>
-									<li><strong>Environment:</strong> Jupyter / VS Code</li>
-								</ul>
+							<section class="col-6 col-12-narrower">
+								<div class="box highlight" style="text-align: left; padding: 2em;">
+									<h4 style="color: #00E5FF;"><i class="icon solid fa-project-diagram"></i> The Inference Engine</h4>
+									<p>The system utilizes a forward-chaining logic approach. By asking the user a series of targeted questions about observed physical traits, the engine navigates the decision tree, eliminating incorrect species until a definitive classification is reached.</p>
+								</div>
 							</section>
-
 						</div>
-					</div>
 
-					<!-- Main Content (The Deep Dive) -->
-					<div class="col-6 col-12-narrower imp-narrower">
-						<div id="content">
+						<hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 3em 0;" />
 
-							<article>
-								<header>
-									<h2>Campus Cafeteria Rating System</h2>
-									<p>Bridging the gap between unstructured human sentiment and structured quantitative data.</p>
-								</header>
+						<h3>3. Research & Official Publication</h3>
+						<p>Beyond simply writing the code, a major component of this project was validating our logic against established biological taxonomies. Because our system architecture proved highly effective at accurately determining preservation statuses, our team authored a formal research paper on the methodology. I am incredibly proud to say that our work, <em>"Expert System For Hornbill Species Classification and Their Preservation Status,"</em> was successfully peer-reviewed and published in the International Journal of Research and Innovation in Social Science (IJRISS).</p>
 
-								<span class="image featured"><img src="images/pic03.jpg" alt="System architecture diagram or code snippet" /></span>
+						<h3>4. System Demonstration</h3>
+						<p>The final deployed system provides a seamless user interface where field researchers or enthusiasts can input data and receive immediate, scientifically backed identification results.</p>
 
-								<h3>The Problem</h3>
-								<p>Traditional 5-star rating systems are inherently flawed. A student might leave a review stating, <em>"The food was quite good, but the service was incredibly slow and the portions were slightly small."</em> Forcing this nuanced, unstructured data into a rigid numerical score often leads to skewed campus analytics and unhelpful metrics for cafeteria management.</p>
-
-								<h3>System Architecture & NLP</h3>
-								<p>To solve this, I engineered a two-part intelligent system. First, the application utilizes Natural Language Processing (NLP) to parse written student reviews. The NLP module tokenizes the text and performs sentiment analysis to extract "crisp" numerical values based on three distinct parameters: <strong>Food Quality</strong>, <strong>Service Speed</strong>, and <strong>Value for Money</strong>.</p>
-
-								<h3>The Fuzzy Logic Inference Engine</h3>
-								<p>Because human language includes modifiers (like "slightly" or "incredibly"), standard Boolean logic (True/False) is insufficient. I passed the NLP outputs into a Fuzzy Inference System. By defining specific membership functions (Poor, Average, Excellent) and establishing a robust matrix of IF-THEN rules, the system intelligently defuzzifies the data, producing a highly accurate, bias-reduced final rating out of 100%.</p>
-							</article>
-
+						<div style="max-width: 800px; margin: 2em auto; text-align: center;">
+							<!-- Responsive Video Wrapper -->
+							<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; border: 1px solid rgba(0, 229, 255, 0.3); box-shadow: 0 0 15px rgba(0, 229, 255, 0.1);">
+								<iframe src="https://www.youtube.com/embed/dhQfZ8cggQs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<p style="font-size: 0.9em; font-style: italic; margin-top: 0.5em;">System Demonstration Video</p>
 						</div>
-					</div>
 
-					<!-- Right Sidebar (Features & Call to Action) -->
-					<div class="col-3 col-12-narrower">
-						<div id="sidebar2">
-
-							<section>
-								<h3>System Features</h3>
-								<ul class="links">
-									<li><a href="#">Automated Sentiment Extraction</a></li>
-									<li><a href="#">Custom Fuzzy Rule Matrix</a></li>
-									<li><a href="#">Bias Reduction Algorithms</a></li>
-									<li><a href="#">Scalable Data Processing</a></li>
-								</ul>
-							</section>
-
-							<section>
-								<h3>View The Source</h3>
-								<p>The complete mathematical models, membership function graphs, and Python codebase are available for review.</p>
-								<footer>
-									<a href="#" class="button">View on GitHub</a>
-								</footer>
-							</section>
-
-						</div>
-					</div>
+					</article>
 
 				</div>
 			</div>
 		</section>
 
-		<!-- Footer (Standardized) -->
 		<div id="footer">
 			<div class="container">
 				<div class="row">
-					<section class="col-3 col-6-narrower col-12-mobilep">
+					<section class="col-6 col-12-narrower">
 						<h3>Core Competencies</h3>
 						<ul class="links">
 							<li>Machine Learning & Regression</li>
@@ -130,27 +104,18 @@
 							<li>Software Troubleshooting</li>
 						</ul>
 					</section>
-					<section class="col-3 col-6-narrower col-12-mobilep">
-						<h3>Quick Links</h3>
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About Me</a></li>
-							<li><a href="portfolio.html">View Portfolio</a></li>
-							<li><a href="#">Download Resume (PDF)</a></li>
-						</ul>
-					</section>
 					<section class="col-6 col-12-narrower">
-						<h3>Get In Touch</h3>
-						<form>
+						<h3>Contact & Socials</h3>
+						<form action="https://formspree.io/f/xlgkkjrn" method="POST">
 							<div class="row gtr-50">
 								<div class="col-6 col-12-mobilep">
-									<input type="text" name="name" id="name" placeholder="Name" />
+									<input type="text" name="name" id="name" placeholder="Name" required />
 								</div>
 								<div class="col-6 col-12-mobilep">
-									<input type="email" name="email" id="email" placeholder="Email" />
+									<input type="email" name="email" id="email" placeholder="Email" required />
 								</div>
 								<div class="col-12">
-									<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+									<textarea name="message" id="message" placeholder="Message" rows="5" required></textarea>
 								</div>
 								<div class="col-12">
 									<ul class="actions">
@@ -163,15 +128,13 @@
 				</div>
 			</div>
 
-			<!-- Icons -->
 			<ul class="icons">
-				<li><a href="https://github.com/Dragoonjack" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="https://github.com/Dragoonjack" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 			</ul>
 
-			<!-- Copyright -->
 			<div class="copyright">
 				<ul class="menu">
-					<li>&copy; My Portfolio. All rights reserved</li>
+					<li>&copy; Soon Boon Ming. All rights reserved</li>
 					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
 			</div>
@@ -180,7 +143,6 @@
 
 	</div>
 
-	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
