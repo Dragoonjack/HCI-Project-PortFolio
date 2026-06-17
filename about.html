@@ -9,9 +9,15 @@
 <body class="is-preload">
 	<div id="page-wrapper">
 
+		<!-- Header -->
 		<div id="header">
-
-			<h1><a href="index.html" id="logo">My <em>Portfolio</em></a></h1>
+			<!-- Logo Badge + Name -->
+			<h1>
+				<a href="index.html" id="logo">
+					<span class="logo-badge">SBM</span>
+					My <em>Portfolio</em>
+				</a>
+			</h1>
 
 			<nav id="nav">
 				<ul>
@@ -26,6 +32,7 @@
 
 		</div>
 
+		<!-- Main -->
 		<section class="wrapper style1">
 			<div class="container">
 				<div id="content">
@@ -36,7 +43,8 @@
 							<p>Computing & IT Student | Bridging Logic, Precision, and Architecture</p>
 						</header>
 
-						<span class="image featured"><img src="images/pic05.jpg" alt="A professional or creative workspace setup" /></span>
+						<!-- Hero Image Setup -->
+						<span class="image featured"><img src="images/workspace.webp" alt="My workspace and display setup" style="filter: brightness(0.8) contrast(1.1); border-radius: 8px;" /></span>
 
 						<p>I am a Computing and Information Technology student based in Malaysia, with a strong focus on applied mathematics, machine learning, and intelligent systems. My academic journey is driven by a passion for solving complex logical problems and building software that bridges the gap between raw data and usable human interfaces. Whether I am developing fuzzy logic systems or mapping dataset features for predictive models, I thrive in environments that require rigorous analytical thinking.</p>
 
@@ -44,13 +52,15 @@
 						<p>I firmly believe that the best problem-solving skills are cultivated through multidisciplinary interests. The precision required in software engineering is directly mirrored in my personal pursuits:</p>
 
 						<div class="row gtr-200">
+							<!-- Box 1: Models -->
 							<section class="col-4 col-12-narrower">
 								<div class="box highlight">
 									<i class="icon solid major fa-cogs"></i>
 									<h3>Precision & Assembly</h3>
-									<p>As an active scale model builder and figure collector, I specialize in complex assembly and meticulous maintenance. This extreme patience translates directly to writing clean, modular code and structuring complex system architectures without losing sight of the smallest details.</p>
+									<p>As an active collector and builder of Gundam models, Transformers, and Kaiju figures, I specialize in complex assembly and meticulous display maintenance. This extreme patience translates directly to writing clean, modular code and structuring complex system architectures without losing sight of the smallest details.</p>
 								</div>
 							</section>
+							<!-- Box 2: Rifle Training -->
 							<section class="col-4 col-12-narrower">
 								<div class="box highlight">
 									<i class="icon solid major fa-bullseye"></i>
@@ -58,23 +68,27 @@
 									<p>My experience in rifle training has instilled a deep sense of discipline, absolute focus, and the ability to operate with precision under pressure—essential traits when debugging critical system failures or meeting strict project deadlines.</p>
 								</div>
 							</section>
+							<!-- Box 3: Modding -->
 							<section class="col-4 col-12-narrower">
 								<div class="box highlight">
 									<i class="icon solid major fa-terminal"></i>
 									<h3>Troubleshooting & Optimization</h3>
-									<p>I enjoy deep-dive technical troubleshooting, frequently modifying PC game files and deploying software extenders to resolve script conflicts, optimize hardware performance, and push system capabilities to their limits.</p>
+									<p>I enjoy deep-dive technical troubleshooting, frequently modifying PC game files for script-heavy environments like <em>Fallout: New Vegas</em> and <em>Mount & Blade II: Bannerlord</em>. This involves deploying script extenders, utilizing conflict resolution tools, and optimizing memory allocation to ensure smooth, high-performance runtime environments.</p>
 								</div>
 							</section>
 						</div>
 
+						<hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 3em 0;" />
+
 						<h3>Looking Forward</h3>
-						<p>I am constantly expanding my technical stack. In the upcoming academic term, I will be deepening my expertise by taking advanced coursework in Neural Networks, Digital Image Processing, and Software Engineering. I am eager to apply these sophisticated computing concepts to practical, real-world development environments.</p>
+						<p>I am constantly expanding my technical stack and collaborating with university peers on system design projects. In the upcoming academic term, I will be deepening my expertise by taking advanced coursework in Neural Networks, Digital Image Processing, and Software Engineering. I am eager to apply these sophisticated computing concepts to practical, real-world development environments.</p>
 					</article>
 
 				</div>
 			</div>
 		</section>
 
+		<!-- Footer -->
 		<div id="footer">
 			<div class="container">
 				<div class="row">
@@ -90,16 +104,17 @@
 					</section>
 					<section class="col-6 col-12-narrower">
 						<h3>Contact & Socials</h3>
-						<form>
+						<!-- Formspree Integration -->
+						<form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
 							<div class="row gtr-50">
 								<div class="col-6 col-12-mobilep">
-									<input type="text" name="name" id="name" placeholder="Name" />
+									<input type="text" name="name" id="name" placeholder="Name" required />
 								</div>
 								<div class="col-6 col-12-mobilep">
-									<input type="email" name="email" id="email" placeholder="Email" />
+									<input type="email" name="email" id="email" placeholder="Email" required />
 								</div>
 								<div class="col-12">
-									<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+									<textarea name="message" id="message" placeholder="Message" rows="5" required></textarea>
 								</div>
 								<div class="col-12">
 									<ul class="actions">
@@ -113,12 +128,12 @@
 			</div>
 
 			<ul class="icons">
-				<li><a href="https://github.com/Dragoonjack" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="https://github.com/Dragoonjack" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 			</ul>
 
 			<div class="copyright">
 				<ul class="menu">
-					<li>&copy; My Portfolio. All rights reserved</li>
+					<li>&copy; Soon Boon Ming. All rights reserved</li>
 					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
 			</div>
