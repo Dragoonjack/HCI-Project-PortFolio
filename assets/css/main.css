@@ -3471,3 +3471,54 @@ textarea {
 	object-position: top center;
 	border-radius: 4px; /* Optional: Adds a slight, modern curve to the image corners */
 }
+
+/* --- Interactive Image Hover Effect --- */
+.box.post .image.left {
+	overflow: hidden; /* Prevents the zoomed image from breaking out of its frame */
+	border-radius: 4px; /* Keeps the corners smooth */
+}
+
+	.box.post .image.left img {
+		transition: transform 0.3s ease, box-shadow 0.3s ease; /* Makes the animation smooth instead of instant */
+	}
+
+	.box.post .image.left:hover img {
+		transform: scale(1.05); /* Zooms the image up by 5% when hovered */
+		box-shadow: 0 0 20px rgba(0, 229, 255, 0.4); /* Adds your signature neon blue glow */
+	}
+
+/* --- Glowing Footer Icons --- */
+#footer .icons li a {
+	transition: all 0.3s ease; /* Smooth animation */
+	display: inline-block; /* Required for the transform scale to work properly */
+}
+
+	#footer .icons li a:hover {
+		transform: scale(1.3); /* Pops the icon up by 30% */
+		color: #00E5FF !important; /* Forces the color to change to Godzilla Blue */
+		text-shadow: 0 0 15px rgba(0, 229, 255, 0.8); /* Adds a glowing neon aura */
+	}
+
+/* --- Homepage Banner Image Override --- */
+#banner {
+	/* We use ../../ to tell the CSS to look outside the css folder, outside the assets folder, and into the images folder! */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../images/workspace.webp') !important;
+	background-size: cover !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	border-bottom: 2px solid #00E5FF !important;
+	padding: 10em 0 !important;
+}
+
+/* --- Homepage Core Competency Icons --- */
+.box.highlight .icon {
+	font-size: 4.5em !important; /* Makes the icons significantly larger */
+	display: inline-block; /* Required for the animation to work */
+	transition: all 0.3s ease !important; /* Smooth animation */
+}
+
+	.box.highlight .icon:hover {
+		transform: scale(1.2) translateY(-10px); /* Makes the icon grow and float up slightly */
+		color: #00E5FF !important; /* Signature Godzilla Blue */
+		text-shadow: 0 0 25px rgba(0, 229, 255, 0.8); /* Beautiful neon glow */
+	}
