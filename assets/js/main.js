@@ -65,3 +65,16 @@
 				});
 
 })(jQuery);
+
+/* --- Back to Top Button Scroll Reveal --- */
+window.addEventListener('scroll', function () {
+	var backToTopButton = document.querySelector('.back-to-top');
+
+	// If the user scrolls down more than 300 pixels, add the 'show-button' class
+	if (window.scrollY > 300) {
+		backToTopButton.classList.add('show-button');
+	} else {
+		// Otherwise, remove the class to hide it again
+		backToTopButton.classList.remove('show-button');
+	}
+});

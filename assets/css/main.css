@@ -3522,3 +3522,48 @@ textarea {
 		color: #00E5FF !important;
 		text-shadow: 0 0 25px rgba(0, 229, 255, 0.8);
 	}
+
+/* --- Smooth Page Scrolling --- */
+html {
+	scroll-behavior: smooth;
+}
+
+/* --- Back to Top Button (Base Settings & Hidden State) --- */
+.back-to-top {
+	position: fixed;
+	bottom: 30px;
+	left: 30px;
+	background-color: rgba(0, 229, 255, 0.1);
+	border: 1px solid rgba(0, 229, 255, 0.5);
+	color: #00E5FF !important;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2em;
+	text-decoration: none;
+	z-index: 1000;
+	box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);
+	transition: all 0.3s ease;
+	/* Hidden by default */
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+	/* --- Scroll Reveal State --- */
+	.back-to-top.show-button {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+		/* --- The Hover Animation --- */
+		.back-to-top.show-button:hover {
+			background-color: #00E5FF;
+			color: #1a1a1a !important;
+			transform: translateY(-5px); /* Floats up */
+			box-shadow: 0 0 25px rgba(0, 229, 255, 0.8); /* Signature Glow */
+		}
